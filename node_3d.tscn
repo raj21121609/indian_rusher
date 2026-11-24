@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c3sjkl1bo6d5e"]
+
+[ext_resource type="Texture2D" uid="uid://vo8504y77gnw" path="res://icon.svg" id="1_a202f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bn751"]
+albedo_color = Color(1, 1, 0.47843137, 1)
+albedo_texture = ExtResource("1_a202f")
+uv1_scale = Vector3(30, 30, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xcej5"]
+
+[node name="Node3D" type="Node3D" unique_id=1659269352]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=878156847]
+transform = Transform3D(750, 0, 0, 0, 0.4, 0, 0, 0, 750, 66.57805, 23.213715, -46.835457)
+material_override = SubResource("StandardMaterial3D_bn751")
+mesh = SubResource("BoxMesh_xcej5")
